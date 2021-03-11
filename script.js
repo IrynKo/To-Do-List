@@ -60,14 +60,11 @@ const newTodo = (todo) => {
     button.innerText = 'Delete';
     
     button.addEventListener('click', () => {
-
-      //console.log(checkbox.checked)
       if (checkbox.checked)
       {
-        //setTimeout( ()=>error.innerHTML = '', 1000);
             deleteUser(todo.id)
         } else {
-            error.innerHTML = 'Confirm checked';
+            error.innerHTML = 'Complete this';
             card.classList.add('invalid-input')
             setTimeout( ()=>error.innerHTML = '', 5000);
             setTimeout( ()=> card.classList.remove('invalid-input'), 5000);
@@ -76,11 +73,7 @@ const newTodo = (todo) => {
   
     rightPart.appendChild(title);
     leftPart.append(checkbox,error,button );
-    //leftPart.appendChild(checkbox);
-    //leftPart.appendChild(error);
-    //leftPart.appendChild(button);
     card.append(rightPart, leftPart);
-    //card.appendChild(leftPart);
     container.appendChild(card);
   
   }

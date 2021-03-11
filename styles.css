@@ -26,13 +26,11 @@
 }
 .form {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .form-control {
     display: block;
-    width: 300%;
-   /* padding: .375rem .75rem;*/
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -49,6 +47,7 @@
 
 .add-button {
     height: 40px;
+    margin-left: 20px;
 }
 
 .title {
@@ -61,4 +60,7 @@
     top: 70%;
     left: 80%;
     color: crimson
+}
+.form-input {
+    width: 50%;
 }
